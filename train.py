@@ -612,6 +612,8 @@ if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Using device {device}')
 
+    print(cfg)
+    
     if cfg.use_darknet_cfg:
         model = Darknet(cfg.cfgfile)
     else:
