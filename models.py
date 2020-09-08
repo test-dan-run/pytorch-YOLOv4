@@ -407,7 +407,7 @@ class Yolov4Head(nn.Module):
 
 
 class Yolov4(nn.Module):
-    def __init__(self, yolov4conv137weight=None, n_classes=80, inference=False):
+    def __init__(self, yolov4conv137weight=None, n_classes=1, inference=False):
         super().__init__()
 
         output_ch = (4 + 1 + n_classes) * 3
