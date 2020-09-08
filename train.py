@@ -542,6 +542,8 @@ def get_args(**kwargs):
     parser.add_argument('-pretrained', type=str, default=None, help='pretrained yolov4.conv.137')
     parser.add_argument('-classes', type=int, default=80, help='dataset classes')
     parser.add_argument('-train_label_path', dest='train_label', type=str, default='train.txt', help="train label path")
+    parser.add_argument('-val_label_path', dest='val_label', type=str, default='val.txt', help="validation label path")
+    parser.add_argument('-use_darknet_cfg', dest='use_darknet_cfg', type=bool, default=True, help="darknet cfg settings")
     parser.add_argument(
         '-optimizer', type=str, default='adam',
         help='training optimizer',
